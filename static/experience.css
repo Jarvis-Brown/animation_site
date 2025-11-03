@@ -1,0 +1,230 @@
+/* Header */
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(60px + 2rem); /* originally 60px */
+    min-height: 0;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-width: 100%;
+}
+
+.header_hr {
+    height: 2px;
+    margin: 10px;
+    background-color: black;
+    display: block;
+}
+
+/* Download Button */
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #47cc1f21;
+    color: #47cc1f;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-btn:hover {
+    background-color: #36a91d;
+    color: white;
+}
+/* Main Content */
+
+main {
+    padding: 20px 20px;
+    flex: 1;
+}
+
+.skills_container {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    text-align: center;
+    justify-content: center;
+}
+
+.design_skills {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+/* Sections */
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    color: #47cc1f;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Experience & Skills */
+
+.job_title {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.job_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-bottom: 20px;
+}
+
+.space_div {
+    margin: 20px 0;
+}
+
+ul {
+    padding: 0;
+}
+
+.job ul li {
+    background: #e8f5e9;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Contact */
+
+.contact p a {
+    color: #47cc1f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1023px) and (min-width: 769px) {
+    header {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .resume-btn {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 572px) {
+    .job_title {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 571px) {
+    header {
+        width: 85%;
+    }
+
+    .skills_container {
+        grid-template-columns: 1fr;
+    }
+
+    .design_skills {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .job_container {
+        grid-template-columns: 1fr;
+    }
+
+    .job_title {
+        text-align: center;
+    }
+    .skills_info {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    header {
+        width: 330px;
+    }
+}
+
+@media (max-width: 321px) {
+    header {
+        width: 280px;
+    }
+
+    .skills_container {
+        grid-template-columns: 1fr;
+    }
+}

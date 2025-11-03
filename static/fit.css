@@ -1,0 +1,1463 @@
+/* group rules*/
+
+:root {
+    --header-color: #5e86da;
+    --bullet-color: #f6af50;
+    --travel-main: #997fce;
+    --travel-accent: #00cecb;
+    --travel-accent-2: #ff508a;
+    --games-main: #366a7d;
+    --games-accent: #42e858;
+    --games-accent-2: #f27171;
+    --games-text: #dde0ea;
+    --tunes-text: #3f3c3c;
+    --tunes-blue: #31437e;
+    --tunes-turquoise: #038c9f;
+    --tunes-orange: #ff5c17;
+    --tunes-gray: #cbcbcd;
+    --white: #ffffff;
+    --pottery-brown: #807440;
+    --pottery-light-brown: #bfb78f;
+    --pottery-purple: #7171aa;
+    --pottery-light-purple: #ccccff;
+}
+
+h3 {
+    color: var(--header-color);
+    text-align: left;
+    font-size: 40px;
+}
+
+.travel_h3 {
+    color: var(--travel-accent-2);
+}
+
+.games_page h3 {
+    color: var(--games-main);
+}
+
+.tunes_page h3 {
+    color: var(--tunes-orange);
+}
+
+.tunes_page h4 {
+    color: var(--tunes-turquoise);
+}
+
+.pottery_page h3 {
+    color: var(--pottery-brown);
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.travel_xp_page h4 {
+    color: var(--travel-main);
+}
+
+.games_page h4 {
+    color: var(--games-main);
+}
+
+.games_page p {
+    color: var(--games-main);
+}
+
+.games_page li {
+    color: var(--games-main);
+}
+
+html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.new_main {
+    width: 100%;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(60px + 2rem); /* originally 60px */
+    min-height: 100vh;
+    margin: 0 8rem;
+    /*overflow-x: hidden;*/
+}
+
+/* gif phone */
+
+.phone_container {
+    position: relative;
+    display: inline-block;
+}
+
+.fit_you_gif {
+    height: 700px;
+    max-height: 100%;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 100px; /* Adjust distance below the GIF */
+    left: 50%;
+    width: 80%;
+    height: 20px;
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.3) 20%,
+        rgba(0, 0, 0, 0) 80%
+    );
+    transform: translateX(-50%);
+    border-radius: 50%;
+    filter: blur(8px); /* Softens the shadow */
+    z-index: -1; /* Ensures it stays behind */
+}
+
+/* Overview */
+
+.text_pic_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 100%;
+}
+
+.android_phone_img {
+    height: 500px;
+    max-height: 100%;
+}
+
+.title_container {
+    padding-bottom: 10px;
+}
+
+.pic_container {
+    display: flex;
+    justify-content: center;
+}
+
+.pottery_page .overview_user_need_img {
+    max-height: 100%;
+    height: 400px;
+    display: block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pottery_page .fit_ios_final {
+    height: 400px;
+    max-height: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pottery_page .user_need_img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pottery_user_need_img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* all info sections */
+
+.info_section {
+    padding-bottom: 40px;
+    width: 100%;
+    max-width: 100%;
+    /*overflow-x: hidden; */
+}
+
+.text_container {
+    width: 100%;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+}
+
+/* Pottery challenge */
+
+.pottery_page .list ul li::before {
+    border: 2px solid var(--pottery-light-brown);
+}
+
+/* Competition section */
+
+.sub_header {
+    padding-bottom: 10px;
+}
+
+.list_info {
+    padding-bottom: 20px;
+}
+
+.list_pic_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.list ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.list ul li {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.list ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--bullet-color);
+    border-radius: 50%;
+}
+
+.screen_img {
+    height: 450px;
+}
+
+/* -- Travel XP Competition -- */
+
+.travel_xp_page .list ul li::before {
+    border: 2px solid var(--travel-accent);
+}
+
+/* -- Games N Things Competition -- */
+
+.games_page .list ul {
+    list-style-type: none; /* override default */
+    padding-left: 20px;
+}
+
+.games_page .list ul li {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.games_page .list ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--games-accent);
+    border-radius: 2px;
+}
+/*
+/* -- Your Tunes Competition -- */
+
+.tunes_page .list ul li::before {
+    border: 2px solid var(--tunes-gray);
+}
+
+/* Personas */
+
+.p_text {
+    margin-bottom: 20px;
+}
+
+.group_persona {
+    width: 60%;
+}
+
+.persona_group_1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.persona_group_2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.persona_group_3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.persona_info_wrapper {
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.persona {
+    display: flex;
+    justify-content: center;
+}
+
+.persona_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+.persona_img {
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.persona_name {
+    text-decoration: 5px underline var(--bullet-color);
+    text-align: center;
+}
+
+.horizontal_list {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap: 20px;
+    max-width: 100%;
+    padding: 20px 0;
+    flex-direction: column;
+}
+
+.list_text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.goals {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.persona_all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.group_persona {
+    width: 30%;
+    min-width: 300px;
+    padding: 0 20px;
+}
+
+/* User Needs / Solutions */
+
+.user_need_img {
+    border-radius: 10px;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.pottery_page .user_need_img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* User Stories*/
+
+.diagram_img {
+    height: 680px;
+}
+
+/* -- Games N Things User Stories -- */
+.games_page .diagram_img {
+    height: 600px;
+}
+
+.games_page .user_need_img {
+    border-radius: 10px;
+}
+/* -- Travel XP User Stories -- */
+
+.box-bg {
+    background-color: #35385a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* -- Your Tunes Mood -- */
+
+.mood_img {
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mood_design_img {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.mood_container {
+    display: flex;
+    gap: 5%;
+}
+
+.mood_color_container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.mood_description {
+    text-align: center;
+    max-width: 100%;
+}
+
+.mood_text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    row-gap: 30px;
+}
+
+.mood_color {
+    height: 150px;
+}
+
+.mood_color_column {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+/*Low Fidelity Wireframes*/
+
+.phone_fidelity_container {
+    gap: 20px;
+}
+
+.android_screen_img {
+    height: 400px;
+}
+
+.phone_title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.lo_mid_fi_screens {
+    row-gap: 20px;
+}
+
+.low_fi_img {
+    height: 300px;
+}
+
+/* -- Games N Things Low Fidelity Wireframes --*/
+
+/*
+.games_page .low_fi_img {
+    height: 450px;
+}
+
+.games_page .lo_mid_fi_screens {
+    gap: 10px;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+*/
+
+/*Your Tunes Low Fidelity Wireframes*/
+
+.tunes_page .lo_mid_fi_screens {
+    padding-top: 30px;
+}
+
+/* -- Pottery Designs -- */
+
+.pottery_design_p {
+    padding-bottom: 10px;
+}
+
+/*Native App Designs*/
+
+.app_design_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.typography_color_container {
+    display: flex;
+    gap: 10%;
+}
+
+.color_row {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-bottom: 20px;
+}
+
+.color_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.color_circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.color_1 {
+    background-color: var(--header-color);
+}
+
+.color_2 {
+    background-color: var(--bullet-color);
+}
+
+.color_3 {
+    background-color: #525252;
+}
+
+.color_4 {
+    background-color: #adafbc;
+}
+
+.color_5 {
+    background-color: #e4e4e4;
+}
+
+.color_text {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.native_icon_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fit_icons {
+    height: 60px;
+}
+
+/* -- Travel XP Typography -- */
+
+.travel_xp_page .app_design_text {
+    font-family: Arial;
+}
+
+/* -- Travel XP colors -- */
+
+.travel_color_1 {
+    background-color: #35385a;
+}
+
+.travel_color_2 {
+    background-color: var(--travel-main);
+}
+
+.travel_color_3 {
+    background-color: var(--travel-accent);
+}
+
+.travel_color_4 {
+    background-color: #ff508a;
+}
+
+.travel_color_5 {
+    background-color: #fcfc8e;
+}
+
+.travel_color_6 {
+    background-color: #d9ccff;
+}
+
+.travel_color_7 {
+    background-color: #c7c4cf;
+}
+
+.travel_color_8 {
+    background-color: #ffffff;
+}
+
+/* -- Games N Things Typography -- */
+
+.games_page .app_design_text {
+    font-family: "Tw Cen MT";
+    font-style: normal;
+}
+
+/* -- Games N Things colors -- */
+
+.games_page .color_circle {
+    border-radius: 10px;
+    border: 2px solid var(--games-main);
+}
+
+.games_color_1 {
+    background-color: #366a7d;
+}
+
+.games_color_2 {
+    background-color: #f27171;
+}
+
+.games_color_3 {
+    background-color: #42e858;
+}
+
+.games_color_4 {
+    background-color: #dde0ea;
+}
+
+.games_color_5 {
+    background-color: #ffffff;
+}
+
+/* -- Your Tunes Typography -- */
+
+.tunes_page .app_design_text {
+    font-family: "Yu Gothic UI", "Yu Gothic";
+}
+
+.tunes_page .gothic_bold {
+    font-family: "Yu Gothic UI Bold";
+    font-weight: 700;
+}
+
+.tunes_page .gothic_semi {
+    font-family: "Yu Gothic UI Medium";
+    font-weight: 600;
+}
+
+/* -- Pottery Typography -- */
+
+.brittany_signature {
+    font-family: "Brittany Signature";
+    font-size: larger;
+}
+
+.brittany_letters {
+    font-size: medium;
+}
+
+.brittany_word {
+    font-size: large;
+}
+
+.cormorant {
+    font-family: "Cormorant Garamond Regular";
+    font-size: x-large;
+}
+
+.cormorant_letters {
+    font-family: "Cormorant Garamond Regular";
+    font-size: larger;
+}
+
+.cormorant_bold {
+    font-family: "Cormorant Garamond Bold";
+    font-weight: bolder;
+}
+
+.cormorant_semibold {
+    font-family: "Cormorant Garamond Semibold";
+    font-weight: bolder;
+}
+
+.cormorant_regular {
+    font-family: "Cormorant Garamond Regular";
+    font-weight: normal;
+}
+
+/* -- Pottery colors - */
+
+.pottery_color_1 {
+    background-color: var(--pottery-purple);
+}
+
+.pottery_color_2 {
+    background-color: var(--pottery-light-purple);
+}
+
+.pottery_color_3 {
+    background-color: var(--pottery-brown);
+}
+
+.pottery_color_4 {
+    background-color: var(--pottery-light-brown);
+}
+
+.pottery_color_5 {
+    background-color: #f5f5f5;
+}
+
+/* -- Pottery illustration -- */
+
+.pottery_sub_header {
+    padding-top: 20px;
+}
+
+.pottery_page .fit_icons {
+    height: 80px;
+}
+
+/* -- Your Tunes colors -- */
+
+.tunes_color_1 {
+    background-color: var(--tunes-text);
+}
+
+.tunes_color_2 {
+    background-color: var(--tunes-blue);
+}
+
+.tunes_color_3 {
+    background-color: var(--tunes-turquoise);
+}
+
+.tunes_color_4 {
+    background-color: var(--tunes-orange);
+}
+
+.tunes_color_5 {
+    background-color: var(--tunes-gray);
+}
+
+.tunes_color_6 {
+    background-color: var(--white);
+}
+
+/* -- Your Tunes icons -- */
+
+.tunes_page .native_icon_container {
+    background-color: var(--tunes-gray);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Final Study */
+
+.fit_ios_final {
+    height: 500px;
+}
+
+.final_phone {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin: 0 10px;
+    gap: 20px;
+}
+
+.paragraph_info {
+    padding-bottom: 20px;
+}
+
+/* -- Your Tunes High Fidelity -- */
+
+.tunes_page .final_phone {
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.tunes_page .fit_ios_final {
+    height: 400px;
+}
+
+/* Takeaways */
+
+.takeaway_img {
+    max-width: 90%;
+}
+
+/* -- Games N Things Takeaways -- */
+
+.games_page .takeaway_img {
+    border-radius: 10px;
+}
+
+/* -- Your Tunes Takeaways -- */
+
+.tunes_page .takeaway_img {
+    max-width: 80%;
+}
+
+/* -- Prototypes -- */
+
+.travel-proto-btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    background-color: var(--travel-accent);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.travel-proto-btn:hover {
+    background-color: var(--travel-accent-2);
+    color: white;
+}
+
+.game-proto-btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    background-color: var(--games-accent);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-proto-btn:hover {
+    background-color: var(--games-main);
+    color: white;
+}
+
+.pottery-proto-btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    background-color: var(--pottery-brown);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pottery-proto-btn:hover {
+    background-color: var(--pottery-light-brown);
+    color: white;
+}
+
+.proto-text {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 1439px) and (min-width: 1025px) {
+    /* Pottery Overview */
+    .pottery_page .overview_user_need_img {
+        height: 300px;
+        margin-left: 30px;
+    }
+
+    /* -- Travel XP Personas -- */
+
+    .travel_persona {
+        height: 300px;
+    }
+
+    /* -- Travel XP User Stories -- */
+
+    .travel_xp_page .diagram_img {
+        height: 550px;
+    }
+
+    /* -- Travel XP Style Guide -- */
+
+    .travel_icons {
+        width: 100%;
+    }
+
+    /* -- Your Tunes Mood -- */
+
+    .mood_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* -- Your Tunes Designs -- */
+
+    .tunes_page .native_icon_container {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    /*.user_need_img {
+        height: 60%;
+    } */
+
+    /* Pottery Overview */
+    .pottery_page .overview_user_need_img {
+        height: 200px;
+
+        margin-left: 30px;
+        align-items: flex-start;
+    }
+
+    .pottery_page .pic_container {
+        justify-content: flex-start;
+    }
+
+    .pic_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #stretch_img {
+        height: 60%;
+    }
+
+    .diagram_img {
+        height: 500px;
+    }
+
+    .list ul {
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+
+    /* -- Games N Things Overview --*/
+
+    #games_overview_pic_container {
+        padding-left: 20px;
+    }
+
+    .fit_overview_img {
+        height: 300px;
+    }
+
+    /* -- Travel XP Personas -- */
+
+    .travel_persona {
+        width: 400px;
+        height: 250px;
+    }
+
+    /* -- Games N Things User Stories -- */
+
+    .games_page .diagram_img {
+        height: 300px;
+    }
+
+    /* -- Games N Things Style Guide -- */
+
+    .games_page .color_row {
+        gap: 10px;
+        /* flex-wrap: wrap; */
+        justify-content: start;
+    }
+
+    .games_page .native_icon_container {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    /* -- Travel XP Style Guide -- */
+
+    .travel_icons {
+        width: 100%;
+    }
+
+    .travel_xp_page .color_row {
+        gap: 20px;
+    }
+
+    /* -- Fit For You Native App Designs -- */
+
+    .fit_page .color_row {
+        gap: 30px;
+    }
+
+    .fit_page .native_icon_container {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    /*-- Your Tunes Mood -- */
+
+    .mood_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mood_img {
+        height: 175px;
+    }
+
+    .mood_color_container {
+        padding-top: 50px;
+    }
+
+    .mood_description {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .mood_color {
+        height: 150px;
+    }
+
+    .mood_color_column {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+    /* -- Your Tunes Designs -- */
+
+    .tunes_page .color_row {
+        gap: 10px;
+        /* flex-wrap: wrap; */
+        justify-content: start;
+    }
+
+    .tunes_page .fit_icons {
+        height: 30px;
+    }
+
+    .tunes_page .native_icon_container {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .list ul {
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+
+    #stretch_img {
+        overflow: hidden;
+    }
+
+    .screen_img {
+        height: 320px;
+    }
+
+    .android_screen_img {
+        height: 300px;
+    }
+
+    .persona_all {
+        justify-content: center;
+    }
+
+    .color_row {
+        gap: 50px;
+    }
+
+    .fit_icons {
+        height: 40px;
+    }
+
+    /* -- Pottery Overview -- */
+
+    .pottery_page .overview_user_need_img {
+        height: 300px;
+    }
+
+    /* -- Games N Things Overview --*/
+
+    #games_overview_pic_container {
+        padding-left: 20px;
+    }
+
+    .fit_overview_img {
+        height: 300px;
+    }
+
+    /* -- Your Tunes Mood -- */
+
+    .mood_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mood_img {
+        height: 170px;
+    }
+
+    .mood_color {
+        height: 100px;
+    }
+
+    /* -- Travel XP Solution -- */
+
+    #travel_solution_img {
+        height: 375px;
+    }
+
+    /* -- Travel XP Personas -- */
+
+    .travel_persona {
+        height: 170px;
+    }
+
+    /* -- Travel XP User Stories -- */
+
+    .diagram_img {
+        height: 400px;
+    }
+
+    /* -- Games  Things User Stories -- */
+
+    .games_page .diagram_img {
+        height: 400px;
+    }
+
+    /* -- Travel XP Style Guide -- */
+
+    .travel_xp_page .color_row {
+        gap: 20px;
+    }
+
+    .travel_icons {
+        width: 450px;
+    }
+
+    .travel_xp_page .list_info .fit_ios_final {
+        height: 350px;
+    }
+
+    /* -- Your Tunes Designs -- */
+
+    .tunes_page .native_icon_container {
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        gap: 10px;
+    }
+
+    /* -- Pottery High Fidelity -- */
+
+    .pottery_page .fit_ios_final {
+        max-height: 200px;
+    }
+
+    /* -- Travel XP User Feedback -- */
+
+    .travel_list_pic_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*
+@media (min-width: 427px) and (max-width: 767px) {
+    .text_pic_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .list_pic_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .pic_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .diagram_img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .typography_color_container {
+        flex-direction: column;
+    }
+
+    .native_icon_container {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .color_row {
+        gap: 70px;
+    }
+
+    .fit_icons {
+        height: 50px;
+        padding: 5px;
+    }
+
+    /* -- Games N Things Overview --*/
+/*
+    #games_overview_pic_container {
+        padding-left: 0px;
+    }
+}
+
+*/
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .main {
+        margin: 0 1.3rem;
+    }
+
+    .pottery_page .overview_user_need_img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .main {
+        margin: 0 2rem;
+    }
+
+    .fit_you_gif {
+        height: 350px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .text_pic_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .android_phone_img {
+        height: 300px;
+    }
+
+    .list_pic_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .diagram_img {
+        height: 400px;
+    }
+
+    .list ul {
+        padding-right: 0px;
+    }
+
+    .pic_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .typography_color_container {
+        flex-direction: column;
+    }
+
+    .color_container {
+        padding-top: 20px;
+    }
+
+    .native_icon_container {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .fit_icons {
+        padding: 0 10px 10px 10px;
+    }
+
+    .fit_ios_final {
+        height: 350px;
+    }
+
+    .proto-text {
+        font-size: 20px;
+    }
+
+    /* -- Games N Things Overview --*/
+
+    #games_overview_pic_container {
+        padding-left: 0px;
+    }
+
+    /* -- Games N Things User Stories -- */
+
+    .games_page .diagram_img {
+        height: 300px;
+    }
+
+    /* -- Your Tunes mood -- */
+
+    .mood_img {
+        height: 120px;
+    }
+
+    .mood_color_column {
+        gap: 40px;
+    }
+
+    .mood_color {
+        height: 80px;
+    }
+
+    /* -- Travel XP Solution -- */
+
+    #travel_solution_img {
+        padding-top: 20px;
+    }
+
+    /* -- Travel XP Style Guide -- */
+
+    .travel_xp_page .color_group {
+        flex-wrap: wrap;
+    }
+
+    .travel_xp_page .color_row {
+        justify-content: center;
+    }
+
+    .travel_xp_page .native_icon_container {
+        justify-content: center;
+    }
+
+    .travel_icons {
+        width: 350px;
+    }
+
+    /* -- Your Tunes Designs -- */
+
+    .tunes_page .color_row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 424px) and (min-width: 376px) {
+    .mood_design_img {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .main {
+        margin: 1rem;
+    }
+
+    .color_row {
+        gap: 30px;
+    }
+
+    /* -- Pottery Overview -- */
+
+    .pottery_page .overview_user_need_img {
+        height: 200px;
+    }
+
+    /* -- Travel XP Overview -- */
+
+    .travel_xp_page .phone_img {
+        height: 400px;
+    }
+
+    /* -- Games N Things Overview --*/
+
+    #games_overview_pic_container {
+        padding-left: 0px;
+    }
+
+    /* -- Your Tunes Mood -- */
+
+    .mood_img {
+        height: 80px;
+    }
+
+    .mood_color_column {
+        gap: 20px;
+    }
+
+    .mood_color {
+        height: 60px;
+    }
+
+    /* -- Travel XP Persona -- */
+
+    .travel_persona {
+        height: 150px;
+    }
+
+    /* -- Travel XP User Stories -- */
+
+    .travel_xp_page .diagram_img {
+        height: 300px;
+    }
+
+    /* -- Games N Things User Stories -- */
+
+    .games_page .diagram_img {
+        height: 250px;
+    }
+
+    /* -- Travel XP Low Fidelity -- */
+
+    .travel_xp_page .low_fi_img {
+        height: 300px;
+    }
+
+    /* -- Travel XP Style Guide -- */
+
+    .travel_xp_page .color_container {
+        padding-bottom: 20px;
+    }
+
+    .travel_xp_page .color_group_all {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .travel_xp_page .color_row {
+        display: contents;
+    }
+
+    .travel_icons {
+        width: 250px;
+    }
+}
