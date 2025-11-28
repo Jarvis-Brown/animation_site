@@ -1,6 +1,7 @@
 main {
     padding-top: calc(60px + 2rem);
     margin: 0 2.7rem;
+    flex: 1;
 }
 
 .header {
