@@ -49,17 +49,6 @@ h4 {
     padding-right: 0.75rem; /* space for arrow */
 }
 
-/* Add arrow */
-.link_group a::after {
-    content: "  ⇨";
-    position: absolute;
-    right: -15px;
-    top: 0;
-    color: black;
-    transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0.7;
-}
-
 /* Hover effect */
 .link_group a:hover {
     color: var(--accent-color);
@@ -281,7 +270,9 @@ footer {
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
     text-align: center;
     line-height: 50px;
     padding: 0;
@@ -328,7 +319,9 @@ footer {
         flex-direction: column;
         width: calc(100% - 2rem);
         text-align: right;
-        transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transition:
+            height 0.3s ease-in-out,
+            opacity 0.3s ease-in-out;
         margin: 0 1rem;
         align-items: flex-end;
         opacity: 0;

@@ -48,11 +48,64 @@ main {
     grid-column: 1/-1;
 }
 
+.label {
+    margin-bottom: 10px;
+}
+
+.skills-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.skill-list {
+    display: flex;
+}
+
+.skill {
+    text-align: center;
+    padding: 2px 10px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    border-radius: 25px;
+    width: auto;
+    margin: 0 5px;
+}
+
 hr {
     border: none;
     height: 2px;
     margin: 20px 31%;
     background-color: black;
+}
+
+.link_group a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    font-family: "Yu Gothic UI", Tahoma, Verdana, sans-serif;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 0.65rem 1rem;
+}
+
+.link_group:hover {
+    transform: translateY(-6px);
+}
+
+.link_group a:hover::after {
+    transform: translateX(4px);
+    opacity: 1;
+}
+
+.link_group {
+    padding: 10px 0;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
 }
 
 .icon_group {
@@ -65,7 +118,9 @@ hr {
 
 .icon_link {
     height: 2rem;
-    transition: filter 0.3s ease, transform 0.3s ease;
+    transition:
+        filter 0.3s ease,
+        transform 0.3s ease;
 }
 
 .icon_link:hover {
